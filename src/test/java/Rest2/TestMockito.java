@@ -42,7 +42,7 @@ public class TestMockito {
     public void Test3(){
         Calculator calc = new Calculator();
 
-        assertEquals("Answer: "+5,calc.getAnswer("plus",3,3).getEntity().toString());
+        assertEquals("Answer: "+5,calc.getAnswer("plus",2,3).getEntity().toString());
    }
 
 
