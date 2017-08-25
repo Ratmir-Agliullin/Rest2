@@ -20,4 +20,16 @@ public class Resource {
         return "<h2>Hello, " + name + "</h2>";
     }
 
+
+
+    @POST
+    @Path("plus")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_HTML)
+    public String plusMethod(@FormParam("varA") int a,@FormParam("varB") int b) {
+        int c = a+b;
+        String ans = Integer.toString(c);
+        return "<h2>Answer is " + ans + "</h2>";
+    }
+
 }
