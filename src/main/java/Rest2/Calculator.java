@@ -10,6 +10,11 @@ import javax.ws.rs.core.Response;
 
 @Path("calc")
 public class Calculator {
+//ICalc mcalc;
+//
+//    public Calculator(ICalc mcalc) {
+//        this.mcalc = mcalc;
+//    }
 
     @GET
     @Path("{opt}/{varA}/{varB}")
